@@ -1,18 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Hello World</title>
-        <style>
-            h1 {
-                background-color: blue;
-            }
-        </style>
-    </head>
-    <body>
-
-        <h1 style="background-color: red;">Hello World! My first webpage!</h1>
-
-        <h1>My second line!</h1>
-
-    </body>
+<head>
+    <title>Online Clothes Store Home Page</title>
+    <style>
+        header, nav, article, section, footer {
+            background: #659494;
+            border-radius: 5px;
+            color: white;
+            font-family: arial, sans-serif;
+            font-size: 30px;
+            text-align: center;
+        }
+        header:before,
+        nav:before,
+        footer:before {
+            content: '<';
+        }
+        header:after,
+        nav:after,
+        footer:after {
+            content: '>';
+        }
+        /*CSS code above*/
+        header,
+        nav,
+        section,
+        article,
+        footer {
+            border: 1px solid gray;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+        /*CSS code above*/
+        section {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+        section div {
+            border: 2px solid white;
+            padding: 30px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <nav>nav</nav>
+    <article>Image carousel</article>
+    <section>
+        <div>product 1</div>
+        <div>proudct 2</div>
+        <div>product 3</div>
+        <div>product 4</div>
+    </section>
+    <footer>footer</footer>
+</body>
 </html>
